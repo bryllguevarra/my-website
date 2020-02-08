@@ -1,0 +1,187 @@
+@font-face{
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+    font-family: "monts";
+}
+@font-face{
+    src: url(../fonts/Sacramento/Sacramento-Regular.ttf);
+    font-family: "sac";
+}
+@font-face{
+    src: url(../fonts/Merriweather/Merriweather-Regular.ttf);
+    font-family: "merri";
+}
+@keyframes cloud1{
+    0%{
+        opacity: 0;
+        transform: translateX(95vw);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(-95vw);
+    }
+}
+@keyframes cloud2{
+    0%{
+        opacity: 0;
+        transform: translateX(-95vw);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(95vw);
+    }
+}
+@keyframes tumble{
+    0%{
+        opacity: 0;
+        transform: translateX(-95vw);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(95vw);
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    text-align: center;
+}
+
+.Home-Header{
+    background-color: rgb(15, 131, 131);
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.c1{
+    position: relative;
+    top: 1rem;
+    left: 25rem;
+    animation: cloud1 14s infinite linear;
+    height: 10rem;
+}
+.c2{
+    position: relative;
+    bottom: 30rem;
+    right: 1rem;
+    animation: cloud2 14s infinite linear;
+    height: 6rem;
+}
+.header-title{
+    font-family: "sac";
+    font-size: 6rem;
+    color: rgb(228, 218, 206);
+}
+.header-sub{
+    font-family: "merri";
+    font-size: 2rem;
+}
+.m1{
+    position: relative;
+    padding-top: 9rem;
+    right: 5rem;
+        
+    
+}
+
+
+
+.home-section-intro{
+    height: 70vh;
+    position: relative;
+    background-color: rgb(97, 145, 216);
+}
+.intro-img{
+    position: relative;
+    height: 25rem;
+    width: 25rem;
+    border-radius: 50%;
+    top: 10rem;
+    left: 2rem;
+}
+.intro-tumble{
+    position: relative;
+    height: 7rem;
+    top: 21rem;
+    animation: tumble 17s infinite linear;
+}
+.home-section-skills{
+    height: 100vh;
+    position: relative;
+    line-height: 2;
+    background-color: lightcyan;
+}
+
+.skills-article-container{
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+.skills-img-1{
+    width: 10rem;
+    position: absolute;
+    float: left;
+    top: 10rem;
+    left: 9rem;
+    
+}
+.skills-title{
+    font-size: 6rem;
+    color: dodgerblue;
+    text-align: center;
+}
+.skills-p1{
+    font-size: 2rem;
+    text-align: center;
+}
+.skills-arctile-sub{
+    width: 50%;
+    overflow: hidden;
+    text-align: center;
+}
+.teemo{
+    height: 10rem;
+    position: absolute;
+    right: 5rem;
+    top: 35rem;
+}
+
+.skills-p2{
+    padding-top: 5rem;
+    font-size: 2rem;
+    text-align: center;
+}
+.cat{
+    padding-top: 5rem;
+    font-size: 2rem;
+    text-align: center;
+}
+.home-footer{
+    background-color: dodgerblue;
+    height: 15vh;
+}
+.footer-contactme{
+    border-width: 0px;
+    border-radius: 2rem;
+    width: 12rem;
+    height: 3rem;
+}
+.footer-contactme:hover{
+    background-color: rgb(8, 69, 122);
+    font-family: "merri";
+}
+.footer-ask{
+    font-family: "merri";
+    font-size: 20px;
+}
+.footer-p{
+    font-family: "merri";
+    font-size: 15px;
+}
